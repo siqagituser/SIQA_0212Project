@@ -15,6 +15,11 @@ packages:
   gitUrl: https://github.com/prabhakarsag
   gitUsername: prabhakarsag
   gitBranch: main
+- name: SIQAJDBCAdapterTests
+  gitServerName: SIQA_kvv_wm_io
+  gitUrl: https://github.webmethods.io/mjan
+  gitUsername: kvv
+  gitBranch: main
 services:
 - serviceName: project.siqa_0212.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_2
   packages:
@@ -59,10 +64,10 @@ configurationVariables:
   jdbc.jdbcTestPool.spyenabled: "false"
   ? artConnection.SIQA_0212Project.project.siqa_0212.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.trustStore
   : ""
-  ? artConnection.SIQA_0212Project.project.siqa_0212.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.transactionType
-  : LOCAL_TRANSACTION
   ? artConnection.SIQA_0212Project.project.siqa_0212.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.startupRetryCount
   : "0"
+  ? artConnection.SIQA_0212Project.project.siqa_0212.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.transactionType
+  : LOCAL_TRANSACTION
   jdbc.jdbcTestPool.snoopenabled: "false"
   ? artConnection.SIQA_0212Project.project.siqa_0212.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.serverName
   : vmiboint01
